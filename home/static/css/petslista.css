@@ -1,7 +1,7 @@
 .card-img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do card */
-    height: 350px; /* Define uma altura fixa */
-    object-fit: cover; /* Corta a imagem para caber na área sem distorcer */
+    width: 100%; 
+    height: 350px; 
+    object-fit: cover;
     border-radius: 5%;
 }
 
