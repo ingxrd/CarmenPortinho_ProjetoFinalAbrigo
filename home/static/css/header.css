@@ -1,0 +1,52 @@
+.cabecalho {
+    position: relative;
+    height: auto;
+    color: white;
+    padding-bottom: 20px; 
+}
+
+
+.cabecalho.background-image {
+    background-image: url('/static/img/cachorro-principal.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cabecalho:not(.background-image) {
+    background-color: #107275; 
+    height: 120px;
+}
+
+.logo-header {
+    width: 55px; 
+    height: auto; 
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.links-cabecalho {
+    margin-top: 20px;
+}
+
+.links-cabecalho a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.iconeusuario {
+    width: 15px;
+    height: auto;
+    margin-top: 20px; 
+}
+
+.fraseprincipal {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-top: 280px; 
+}
+
+.fraseprincipal h1 {
+    font-size: 5.5rem;
+}

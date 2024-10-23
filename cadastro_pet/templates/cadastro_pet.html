@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="cadastro-pet-body">
+    <div class="cadastro-pet-container">
+        <h1 class="cadastro-pet-titulo">Cadastro de Novo Pet</h1>
+        {% if success %}
+        <p class="alert alert-success">Pet cadastrado com sucesso!</p>
+        {% endif %}
+    
+        <form method="POST" enctype="multipart/form-data" class="cadastro-pet-form">
+            {% csrf_token %} 
+            <!-- Dá mais segurança ao formulário contra ataques entre sites. O que o 
+             usuário inserir aqui, por exemplo, seria enviado a outro site.  -->
+            <div class="form">{{ form.as_p }}</div>
+            <button type="submit" class="cadastro-pet-btn">SALVAR PET</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

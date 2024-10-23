@@ -1,0 +1,33 @@
+{% load static %}
+<footer class="cabecalho {% if request.path == '/' %}background-image{% endif %}">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Coluna 1: Logo -->
+            <div class="col-md-4 text-start">
+                <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo-header"/>
+            </div>
+
+            <!-- Coluna 2: Texto centralizado -->
+            <div class="col-md-4 text-center links-cabecalho">
+                <a href="/">HOME</a>
+                <a href="/contato" target="_blank">CONTATO</a>
+                <a href="/sobre" target="_blank">SOBRE</a>
+                <a href="/adote" target="_blank"><b>ADOTE</b></a>
+            </div>
+
+            <!-- Coluna 3: Ícones de redes sociais -->
+            <div class="col-md-4 text-end">
+                <a href="/admin" target="_blank">
+                    <img src="{% static 'img/icone-usuario.png' %}" alt="Ícone login de usuário" class="iconeusuario"/>
+                </a>
+            </div>
+
+            {% if request.path == '/' %}
+            <div class="fraseprincipal">
+                <h3>Não compre,</h3>    
+                <h1><b>Adote.</b></h1>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</footer>

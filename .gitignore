@@ -1,0 +1,20 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyo
+*.pyd
+
+# Environment
+.venv/*
+.vscode/
+
+
+# Windows
+Thumbs.db
+
+# Arquivos de migração (apenas em desenvolvimento)
+*/migrations/*
+
+Lib

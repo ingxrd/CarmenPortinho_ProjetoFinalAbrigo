@@ -1,0 +1,26 @@
+{% load static %}
+<footer class="rodape">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Coluna 1: Logo -->
+            <div class="col-md-4 text-start">
+                <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo-footer"/>
+            </div>
+
+            <!-- Coluna 2: Texto centralizado -->
+            <div class="col-md-4 text-center">
+                <p>Lar de Patinhas © 2024</p>
+            </div>
+
+            <!-- Coluna 3: Ícones de redes sociais -->
+            <div class="col-md-4 text-end">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn" class="social-logo"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="{% static 'img/instagram.png' %}" alt="Instagram" class="social-logo"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

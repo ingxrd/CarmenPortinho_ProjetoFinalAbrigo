@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar de Patinhas</title>
+</head>
+<body>
+    <h1>{{ pet.nome_pet }}</h1>
+    <img src="{{ pet.imagem }}" class="card-img" alt="Imagem de {{ pet.nome_pet }}" width="300">
+    <ul>
+        <li>Idade: {{ pet.idade_pet }}</li>
+        <li>Raça: {{ pet.raca_pet }}</li>
+        <li>Espécie: {{ pet.get_especie_pet_display }}</li>
+        <li>Histórico de Saúde: {{ pet.historico_saude }}</li>
+        <li>Adotado: {{ pet.adotado|yesno:"Sim,Não" }}</li>
+    </ul>
+</body>
+</html>
+
+{% endblock %}
+
+

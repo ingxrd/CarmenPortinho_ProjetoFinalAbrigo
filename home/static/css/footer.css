@@ -1,0 +1,22 @@
+.rodape {
+    background-color: #107275; 
+    color: white;
+    padding: 10px 0; 
+}
+
+.logo-footer {
+    width: 55px; 
+    height: auto;
+}
+
+.social-logo {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+.social-logo a{
+    text-decoration: none;
+}
+

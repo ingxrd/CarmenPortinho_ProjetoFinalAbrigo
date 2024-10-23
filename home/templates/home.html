@@ -1,0 +1,65 @@
+<!-- Vou extender a base.html para home -->
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- Bloco de conteúdo da nossa Home. -->
+{% block content %}
+
+<!-- Conteúdo do card com dados. -->
+<div class="container-card text-center">
+    <div class="row">
+        <div class="col-md">
+            <h2>150</h2>
+            <p>animais adotados</p>
+        </div>
+        <div class="col-md">
+            <h2>+5</h2>
+            <p>toneladas de ração doados</p>
+        </div>
+        <div class="col-md">
+            <h2>300</h2>
+            <p>resgates realizados</p>
+        </div>
+    </div>
+</div>
+
+<!-- Texto principal, antes da lógica para renderizar os cards dos bichos. -->
+<div class="text-center frasenovoamigo">
+    <h1>Seu novo melhor amigo</h1>
+    <h1>está te esperando</h1>
+</div>
+
+<!-- Grid de animais disponíveis para adoção -->
+<div class="container">
+    <div class="row">
+        <!-- Loop pelos pets disponíveis -->
+        {% for pet in pets  %}
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="{% url 'detalhes_pet' pet.id %}" target="_blank">
+                    <img src="{{ pet.imagem }}" class="card-img" alt="Imagem de {{ pet.nome_pet }}">
+                    </a>
+                    <div class="card-body">
+                            <h5 class="card-title">{{ pet.nome_pet }}</h5>
+                        <p class="card-text">{{ pet.idade_pet }} anos, {{ pet.raca_pet }}</p>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <p class="text-center">Nenhum animal disponível para adoção no momento.</p>
+        {% endfor %}
+    </div>
+  </div>
+    
+  <!-- Card de apoio -->
+<div class="container-gato">
+    <div class="textoapoio">
+        <h3>Apoie o nosso</h3>
+        <h3>projeto.</h3>
+        <button class="btn" type="submit">Doe através do pix</button>
+    </div>
+</div>
+
+
+
+{% endblock %}

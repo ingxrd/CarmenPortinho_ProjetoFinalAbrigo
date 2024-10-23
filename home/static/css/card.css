@@ -1,0 +1,77 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+/* Card de números impactados */
+.container-card{
+    background-color: #107275;
+    padding: 10px;
+}
+
+
+.frasenovoamigo{
+    font-weight: 300;
+    font-size: 4.5rem;
+    margin-top: 30px;
+    color: #F07C93;
+}
+
+
+.container-card h2 {
+    font-weight: bold;
+    color:#E9BBDF;
+    font-size: 4rem;
+    margin-top: 20px;
+}
+
+
+.container-card p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+/* Card com pedido de apoio */
+
+
+.container-gato {
+    position: relative;
+    background-image: url('/static/img/gato-sorrindo.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    padding-right: 30px; 
+    padding-bottom: 80px; 
+}
+
+.textoapoio {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+}
+
+.textoapoio h3 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: right; 
+}
+
+.btn {
+    background-color: #E9BBDF;
+    color: #107275;
+    padding: 10px 30px; 
+    font-size: 1.25rem; 
+    margin-top: 20px; 
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #107275;
+    color: #E9BBDF;
+}
