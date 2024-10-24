@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+
+    <!-- Formulário de pesquisa -->
+    <form class="d-flex mb-2" action="{% url 'adote' %}" method="GET">
+        <input class="form-control me-2" type="search" placeholder="Pesquise o nome ou raça do bichinho que deseja" aria-label="Pesquisar"
+            name="pesquisa_query" value="{{ request.GET.pesquisa_query }}">
+        <button class="btn btn-outline-secondary mb-2" type="submit">Buscar</button>
+    </form>
+
+    {% if pesquisa_query %}
+    <div class="text-center mb-4">
+        <h1 class="display-6">Resultados para: <strong>{{ pesquisa_query|capfirst }}</strong></h1>
+    </div>
+    {% endif %}
+
+    <hr>
+
+    <!-- Grid de animais disponíveis para adoção -->
+    <div class="container">
+        <div class="row">
+            <!-- Loop pelos pets disponíveis -->
+            {% for pet in animais %}
+            <div class="col-sm-4">
+                <!-- Aqui deve entrar o link para o detalhe do pet -->
+                <div class="card">
+                    <img src="{{ pet.imagem.url }}" class="card-img" alt="Imagem de {{ pet.nome_pet }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ pet.nome_pet }}</h5>
+                        <p class="card-text">{{ pet.idade_pet }}, {{ pet.raca_pet }}</p>
+                    </div>
+                </div>
+                <!-- final do card -->
+            </div>
+            {% empty %}
+            <p class="text-center">Nenhum animal disponível para adoção no momento.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+{% endblock %}

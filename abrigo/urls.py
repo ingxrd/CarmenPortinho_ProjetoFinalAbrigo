@@ -6,10 +6,9 @@ from django.conf.urls.static import static
 
 # Importação das views
 
-from home.views import home
+from home.views import home, adote_pet
 from cadastro_pet.views import criar_pet
 # from detalhes_pet.views import detalhes_pet #em desenvolvimento
-
 
 
 urlpatterns = [
@@ -18,9 +17,10 @@ urlpatterns = [
     path('cadastrar-pet/', criar_pet),
     # URL para detalhes do pet, em desenvolvimento
     # path('detalhes/<uuid:id>/', detalhes_pet, name='detalhes_pet'),
-    #Formulário de Adoção 
+    #Formulário de Adoção
     #Sobre => espaço para apresentação da Squad
     #Página que mostra todos os animais + barra de pesquisa
+    path('adote/', adote_pet, name = 'adote'), #junto com a listagem dos bicinhos disponiveis e a barra de pesquisa
 ]
 
 
