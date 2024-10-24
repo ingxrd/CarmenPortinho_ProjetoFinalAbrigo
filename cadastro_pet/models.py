@@ -23,8 +23,8 @@ class Pet(models.Model):
     #Parte do painel administrativo
 
     #Essa parte diz: o Pet vai ser uma string e lá no painel administrativo, vai aparecer o id, nome e imagem
-    # def __str__(self):
-    #     return f'{self.id}, {self.nome_pet}, {self.imagem}'
+    def __str__(self):
+        return self.nome_pet
     
     #Diz como as informações da tabela de pets serão apresentadas no painel administrativo do Django
     class Meta:

@@ -10,7 +10,7 @@ from .models import Pet
 class PetForm(forms.ModelForm):
     class Meta:
         model = Pet
-        exclude = ['id', 'data_criacao']
+        exclude = ['id', 'data_criacao', 'adotado']
         labels = {
             'nome_pet': 'Nome',
             'idade_pet': 'Idade',
