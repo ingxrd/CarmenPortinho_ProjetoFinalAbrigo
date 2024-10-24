@@ -2,12 +2,13 @@
     position: relative;
     height: auto;
     color: white;
-    padding-bottom: 20px; 
+    /* padding-bottom: 20px;  */
+    padding: 10px;
 }
 
 
 .cabecalho.background-image {
-    background-image: url('/static/img/cachorro-principal.png');
+    background-image: url('/static/img/cachorroprincipal.png');
     background-size: cover;
     background-position: center;
 }
@@ -34,6 +35,13 @@
     margin: 0 10px;
 }
 
+
+.links-cabecalho a:hover{
+    color: white;
+    background-color: #107275;
+    padding: 5px;
+    border-radius: 5px;
+}
 .iconeusuario {
     width: 15px;
     height: auto;

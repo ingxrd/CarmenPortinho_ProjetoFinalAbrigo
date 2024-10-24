@@ -18,3 +18,8 @@ Thumbs.db
 */migrations/*
 
 Lib
+
+
+*venv/
+
+Scripts/
