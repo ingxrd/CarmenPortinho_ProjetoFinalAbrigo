@@ -6,7 +6,7 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Environment
+# Ambiente virtual
 .venv/*
 .vscode/
 
@@ -20,6 +20,7 @@ Thumbs.db
 Lib
 
 
-*venv/
-venv/
 Scripts/
+
+
+.venv

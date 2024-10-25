@@ -15,11 +15,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('cadastrar-pet/', criar_pet),
-     path('detalhes/<uuid:id>/', detalhes_pet, name='detalhes_pet'),
+    path('detalhes/<uuid:id>/', detalhes_pet, name='detalhes_pet'),
+    path('adote/', adote_pet, name = 'adote'), #junto com a listagem dos bicinhos disponiveis e a barra de pesquisa
+
+    #Falta:
     #Formulário de Adoção
     #Sobre => espaço para apresentação da Squad
-    #Página que mostra todos os animais + barra de pesquisa
-    path('adote/', adote_pet, name = 'adote'), #junto com a listagem dos bicinhos disponiveis e a barra de pesquisa
+
 ]
 
 

@@ -6,4 +6,4 @@ def detalhes_pet(request, id):
     context = {
         'pet': pet
     }
-    return render(request, 'detalhes_pet/detalhes_pet.html', context)
+    return render(request, 'detalhes_pet.html', context)
