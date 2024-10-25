@@ -12,6 +12,8 @@ class Adotante(models.Model):
     cpf = models.CharField(max_length=14, unique=True)  
     telefone = models.CharField(max_length=15)  
     email = models.EmailField(max_length=50, unique=True)
+    idade = models.BooleanField(default=False, verbose_name='Sua idade é maior de 18 anos?')
+    termo_adocao = models.BooleanField(default=False, verbose_name='Você concorda com os termos de adoção responsável?')
     data_criacao = models.DateTimeField(auto_now_add=True)
     pet = models.ForeignKey(Pet, on_delete=models.CASCADE, related_name='candidatos')
 
