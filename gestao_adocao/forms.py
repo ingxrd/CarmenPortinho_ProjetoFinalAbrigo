@@ -1,8 +1,8 @@
 
 from django import forms
-from .models import CandidatoAdocao
+from gestao_adocao.models import Adotante
 
-class CandidatoAdocaoForm(forms.ModelForm):
+class AdotanteForm(forms.ModelForm):
      class Meta:
-        model = CandidatoAdocao
-        fields = ['nome', 'cpf', 'telefone', 'email', 'idade', 'termo_adocao', 'data_criacao', 'pet']
+        model = Adotante
+        fields = ['nome', 'cpf', 'telefone', 'email', 'idade', 'termo_adocao', 'pet']
