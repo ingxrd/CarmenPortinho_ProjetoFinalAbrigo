@@ -7,10 +7,19 @@
 <div class="container mt-4">
 
     <!-- Formulário de pesquisa -->
-    <form class="d-flex mb-2" action="{% url 'adote' %}" method="GET">
+    <!-- <form class="d-flex mb-2" action="{% url 'adote' %}" method="GET">
         <input class="form-control me-2" type="search" placeholder="Pesquise o nome ou raça do bichinho que deseja" aria-label="Pesquisar"
             name="pesquisa_query" value="{{ request.GET.pesquisa_query }}">
         <button class="btn btn-outline-secondary mb-2" type="submit">Buscar</button>
+    </form> -->
+    <form class="d-flex mb-2" action="{% url 'adote' %}" method="GET">
+        <div class="input-group w-100">
+            <input class="form-control" type="search" placeholder="Pesquise o nome ou raça do bichinho que deseja" aria-label="Pesquisar"
+                name="pesquisa_query" value="{{ request.GET.pesquisa_query }}" style="color: #FFFFFF; background-color: #F07C93;  border: none;">
+            <button class="btn btn-outline-secondary  p-4 m-0" type="submit" style=" color: #FFFFFF; background-color: #F07C93; border: none;">
+                 Buscar
+            </button>
+        </div>
     </form>
 
     {% if pesquisa_query %}
@@ -28,13 +37,16 @@
             {% for pet in animais %}
             <div class="col-sm-4">
                 <!-- Aqui deve entrar o link para o detalhe do pet -->
-                <div class="card">
-                    <img src="{{ pet.imagem.url }}" class="card-img" alt="Imagem de {{ pet.nome_pet }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ pet.nome_pet }}</h5>
-                        <p class="card-text">{{ pet.idade_pet }}, {{ pet.raca_pet }}</p>
+                <a href="{% url 'detalhes_pet' pet.id %}" class="text-decoration-none"> 
+                    <div class="card">
+                        <img src="{{ pet.imagem.url }}" class="card-img" alt="Imagem de {{ pet.nome_pet }}">
+                        <div class="card-body p-1 mt-3">
+                            <h5 class="card-title" style="color: #1a1a1a;">{{ pet.nome_pet }}</h5>
+                            <p class="card-text">{{ pet.idade_pet }}, {{ pet.raca_pet }}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
+                
                 <!-- final do card -->
             </div>
             {% empty %}

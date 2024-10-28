@@ -1,0 +1,154 @@
+<!-- Vou extender a base.html para home -->
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- Bloco de conteúdo da nossa Home. -->
+{% block content %}
+
+<div class="container my-5">
+    <h1 class="text-center" style="color: #F07C93;">Squad Carmen Portinho</h1>
+    <p class="text-center" style="color: #a8a8a8;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+        Cras venenatis euismod malesuada. Nullam non scelerisque lorem, vitae interdum risus.
+    </p>
+
+    <div class="row g-3">
+        <!-- Ana -->
+        <div class="col-sm-4">
+            <div class="card-sobre rounded shadow-sm">
+                <img src="{% static 'imgs/ana.jpeg' %}" class="card-img-top rounded-top" alt="Imagem de Ana">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1a1a1a;">Ana Caroline Freiria Pires</h5>
+                    <p class="card-text">Descrição breve de Ana.</p>
+                    <a href="https://github.com/Andiichi" class="btn btn-outline-secondary me-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com" class="btn btn-outline-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Andrezza -->
+        <div class="col-sm-4">
+            <div class="card-sobre rounded shadow-sm">
+                <img src="{% static 'imgs/andreza.jpeg' %}" class="card-img-top rounded-top" alt="Imagem de Andrezza">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1a1a1a;">Andrezza Nogueira da Silva</h5>
+                    <p class="card-text">Descrição breve de Andrezza.</p>
+                    <a href="https://github.com/Andiichi" class="btn btn-outline-secondary me-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com" class="btn btn-outline-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arielle -->
+        <div class="col-sm-4">
+            <div class="card-sobre rounded shadow-sm">
+                <img src="{% static 'imgs/ariele.jpeg' %}" class="card-img-top rounded-top" alt="Imagem de Arielle">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1a1a1a;">Arielle Ribeiro de Oliveira Tavares</h5>
+                    <p class="card-text">Descrição breve de Arielle.</p>
+                    <a href="https://github.com/arielleoliveira" class="btn btn-outline-secondary me-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com" class="btn btn-outline-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elizabete -->
+        <div class="col-sm-4">
+            <div class="card-sobre rounded shadow-sm">
+                <img src="{% static 'imgs/elizabete.jpeg' %}" class="card-img-top rounded-top" alt="Imagem de Elizabete">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1a1a1a;">Elizabete de Souza Fabri</h5>
+                    <p class="card-text">Engenheira de Software @Itaú</p>
+                    <a href="https://github.com/elizabetefabri" class="btn btn-outline-secondary me-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/elizabetefabri" class="btn btn-outline-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingrid -->
+        <div class="col-sm-4">
+            <div class="card-sobre rounded shadow-sm">
+                <img src="{% static 'imgs/ingrid.jpeg' %}" class="card-img-top rounded-top" alt="Imagem de Ingrid">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1a1a1a;">Ingrid Stefhani Silva Munhoz</h5>
+                    <p class="card-text">Descrição breve de Ingrid.</p>
+                    <a href="https://github.com/ingxrd" class="btn btn-outline-secondary me-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com" class="btn btn-outline-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Livia -->
+        <div class="col-sm-4">
+            <div class="card-sobre rounded shadow-sm">
+                <img src="{% static 'imgs/livia.jpeg' %}" class="card-img-top rounded-top" alt="Imagem de Livia">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1a1a1a;">Livia Matias da Silva</h5>
+                    <p class="card-text">Descrição breve de Livia.</p>
+                    <a href="https://github.com/liviatech" class="btn btn-outline-secondary me-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com" class="btn btn-outline-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rose -->
+        <div class="col-sm-4">
+            <div class="card-sobre rounded shadow-sm">
+                <img src="{% static 'imgs/rose.jpeg' %}" class="card-img-top rounded-top" alt="Imagem de Rose">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1a1a1a;">Rosicleide Aparecida Fonseca Xistulino</h5>
+                    <p class="card-text">Descrição breve de Rose.</p>
+                    <a href="https://github.com/Xistulino" class="btn btn-outline-secondary me-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com" class="btn btn-outline-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thais -->
+        <div class="col-sm-4">
+            <div class="card-sobre rounded shadow-sm">
+                <img src="{% static 'imgs/thais.jpeg' %}" class="card-img-top rounded-top" alt="Imagem de Thais">
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1a1a1a;">Thais D'avilla de Souza Mesquita Pereira</h5>
+                    <p class="card-text">Descrição breve de Thais.</p>
+                    <a href="https://github.com/ThaisDavilla" class="btn btn-outline-secondary me-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com" class="btn btn-outline-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

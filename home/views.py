@@ -39,4 +39,9 @@ def pesquisar_animais(request):
     
     else:
         return render(request, 'adote.html', {})
-  
+
+def sobre(request):
+    return render(request, 'sobre.html')
+
+def contato(request):
+    return render(request, 'contato.html')
