@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 
 # Importação das views
 
-from home.views import home, adote_pet, sobre
+from home.views import home, adote_pet, sobre, contato
 from cadastro_pet.views import criar_pet
 from detalhes_pet.views import detalhes_pet
 from gestao_adocao.views import criar_adocao, listar_adocoes
@@ -18,7 +18,8 @@ urlpatterns = [
     path('adote/', adote_pet, name = 'adote'), 
     path('criar_adocao/', criar_adocao, name='criar_adocao'),  
     path('listar_adocoes/', listar_adocoes, name='listar_adocoes'),
-    path('sobre/', sobre, name='sobre')
+    path('sobre/', sobre, name='sobre'),
+    path('contato/', contato, name='contato')
     
     #Sobre => espaço para apresentação da Squad
 

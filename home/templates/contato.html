@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-form-contato row">
+    <h1 class="text-center" style="color: #F07C93;">Entre em Contato</h1>
+    <p class="text-center" style="color: #a8a8a8;">
+        Preencha o formulário abaixo para entrar em contato conosco. Responderemos o mais rápido possível.
+    </p>
+
+    <form method="post" action="{% url 'contato' %}" class="">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-pink text-white w-100" style="background-color: #F07C93; border-color: #F07C93;">
+            Enviar Mensagem
+        </button>
+    </form>
+</div>
+{% endblock %}
