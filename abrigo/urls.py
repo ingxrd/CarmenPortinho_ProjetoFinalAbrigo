@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 from home.views import home, adote_pet, sobre, contato
 from cadastro_pet.views import criar_pet
 from detalhes_pet.views import detalhes_pet
-from gestao_adocao.views import criar_adocao, listar_adocoes
+from gestao_adocao.views import criar_adocao
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -17,7 +17,7 @@ urlpatterns = [
     path('detalhes/<uuid:id>/', detalhes_pet, name='detalhes_pet'),
     path('adote/', adote_pet, name = 'adote'), 
     path('criar_adocao/', criar_adocao, name='criar_adocao'),  
-    path('listar_adocoes/', listar_adocoes, name='listar_adocoes'),
+    # path('listar_adocoes/', listar_adocoes, name='listar_adocoes'),
     path('sobre/', sobre, name='sobre'),
     path('contato/', contato, name='contato')
     
