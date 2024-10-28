@@ -33,23 +33,26 @@
 <div class="container">
     <div class="row">
         <!-- Loop pelos pets disponíveis -->
-        {% for pet in pets  %}
-            <div class="col-sm-4">
+        {% for pet in pets %}
+        <div class="col-sm-4 p-3">
+            <a href="{% url 'detalhes_pet' pet.id %}" class="text-decoration-none">
                 <div class="card">
                     <img src="{{ pet.imagem.url }}" class="card-img" alt="Imagem de {{ pet.nome_pet }}">
-                    <div class="card-body">
-                            <h5 class="card-title">{{ pet.nome_pet }}</h5>
+
+                    <div class="card-body p-1 mt-3">
+                        <h5 class="card-title" style="color: #1a1a1a;">{{ pet.nome_pet }}</h5>
                         <p class="card-text">{{ pet.idade_pet }}, {{ pet.raca_pet }}</p>
                     </div>
-                </div>
-            </div>
-        {% empty %}
-            <p class="text-center">Nenhum animal disponível para adoção no momento.</p>
-        {% endfor %}
+            </a>
+        </div>
     </div>
-  </div>
-    
-  <!-- Card de apoio -->
+    {% empty %}
+    <p class="text-center">Nenhum animal disponível para adoção no momento.</p>
+    {% endfor %}
+</div>
+</div>
+
+<!-- Card de apoio -->
 <div class="container-gato">
     <div class="textoapoio">
         <h3>Apoie o nosso</h3>
@@ -57,7 +60,5 @@
         <button class="btn" type="submit">Doe através do pix</button>
     </div>
 </div>
-
-
 
 {% endblock %}
