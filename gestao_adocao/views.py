@@ -10,7 +10,7 @@ from .forms import AdotanteForm
 # Listar Adoções
 def listar_adocoes(request):
     adotantes = Adotante.objects.all()
-    return render(request, 'adocoes/listar_adocoes.html', {'adotantes': adotantes})
+    return render(request, 'listar_adocoes.html', {'adotantes': adotantes})
 
 # Criar Adoção
 def criar_adocao(request):
@@ -21,7 +21,7 @@ def criar_adocao(request):
             return redirect('listar_adocoes')  # Redireciona para a lista após salvar
     else:
         form = AdotanteForm()
-    return render(request, 'adote/criar_adocao.html', {'form': form})
+    return render(request, 'formulario_adocao.html', {'form': form})
 
 # Edição da adoção
 def editar_adocao(request, id):
@@ -33,7 +33,7 @@ def editar_adocao(request, id):
             return redirect('listar_adocoes')  # Redireciona para a lista após salvar
     else:
         form = AdotanteForm(instance=adotante)
-    return render(request, 'adote/editar_adocao.html', {'form': form, 'adotante': adotante})
+    return render(request, 'editar_adocao.html', {'form': form, 'adotante': adotante})
 
 # Remoção da Adoção
 def remover_adocao(request, id):
@@ -41,7 +41,7 @@ def remover_adocao(request, id):
     if request.method == 'POST':
         adotante.delete()
         return redirect('listar_adocoes')  # Redireciona para a lista após remover
-    return render(request, 'adote/remover_adocao.html', {'adotante': adotante})
+    return render(request, 'remover_adocao.html', {'adotante': adotante})
 
 
 def adote_view(request):
