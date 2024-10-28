@@ -1,0 +1,76 @@
+/* Centraliza o container e define a largura máxima */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.btn-pink:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-title {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+.btn-pink {
+  background-color: #f07c93;
+  border-color: #f07c93;
+  color: white;
+
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn-pink:hover {
+  background-color: #e6677f;
+  border-color: #e6677f;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-check input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 14px;
+  color: #f07c93;
+}
+
+.form-control::placeholder {
+  color: #ffffff99;
+  opacity: 1;
+}
