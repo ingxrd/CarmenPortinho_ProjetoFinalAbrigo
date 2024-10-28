@@ -1,8 +1,7 @@
-
 from django import forms
-from .models import CandidatoAdocao
+from .models import Adotante  # Apenas importando Adotante, sem qualquer importação de models.py no sentido contrário.
 
-class CandidatoAdocaoForm(forms.ModelForm):
-     class Meta:
-        model = CandidatoAdocao
-        fields = ['nome', 'cpf', 'telefone', 'email', 'idade', 'termo_adocao', 'data_criacao', 'pet']
+class AdotanteForm(forms.ModelForm):
+    class Meta:
+        model = Adotante
+        fields = ['nome', 'cpf', 'telefone', 'email', 'pet', 'idade', 'termo_adocao']
