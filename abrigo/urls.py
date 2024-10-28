@@ -3,23 +3,23 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-
 # Importação das views
 
-from home.views import home, adote_pet
+from home.views import home, adote_pet, sobre
 from cadastro_pet.views import criar_pet
 from detalhes_pet.views import detalhes_pet
-
+from gestao_adocao.views import criar_adocao, listar_adocoes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('cadastrar-pet/', criar_pet),
     path('detalhes/<uuid:id>/', detalhes_pet, name='detalhes_pet'),
-    path('adote/', adote_pet, name = 'adote'), #junto com a listagem dos bicinhos disponiveis e a barra de pesquisa
-
-    #Falta:
-    #Formulário de Adoção
+    path('adote/', adote_pet, name = 'adote'), 
+    path('criar_adocao/', criar_adocao, name='criar_adocao'),  
+    path('listar_adocoes/', listar_adocoes, name='listar_adocoes'),
+    path('sobre/', sobre, name='sobre')
+    
     #Sobre => espaço para apresentação da Squad
 
 ]
