@@ -2,11 +2,21 @@
 {% load static %}
 
 {% block content %}
-<h2>Solicitação de Adoção para {{ pet.nome }}</h2>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Enviar Solicitação</button>
-</form>
-
+<div class="container my-5 flex-container">
+    <div class="row align-items-center">
+        <h2 class="form-title">Solicitação de Adoção</h2>
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                {% csrf_token %}
+                {{ form.as_p }}
+            </div>
+            
+            <button type="submit" class="btn btn-pink text-white mb-4">Enviar Solicitação</button>
+        </form>
+        <a href="{% url 'home' %}" class="text-decoration-none" style="color: #F07C93;">
+            &lt; Veja outros animais disponíveis
+        </a>
+        
+    </div>
+</div>
 {% endblock %}
