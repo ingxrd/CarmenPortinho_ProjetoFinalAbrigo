@@ -45,7 +45,7 @@ Papéis e Responsabilidades:
 
 - Elizabete de Souza Fabri: Responsável por parte do frontend, através dos [templates] de cada app, e também por prestar auxílio a qualquer integrante com dificuldades e também foi também uma das participantes do vídeo.
 
-- Ingrid Stefhani Silva Munhoz: Tech Leader da squad, responsável por criar o repositório oficial para envio de cada commit e aprovações das pull requests. Modelagem das telas no Figma. Responsável por parte do frontend e desenvolvimento da [home] e [cadastro_pet], montagem da apresentação utilizada no vídeo, apoio técnico a todas as integrantes com dificuldades e foi também uma das participantes da gravação.
+- Ingrid Stefhani Silva Munhoz: Tech Leader da squad, responsável por criar o repositório oficial para envio de cada commit e aprovações das pull requests. Modelagem das telas no Figma e artigos guias no medium para auxiliar a squad. Responsável por parte do frontend e desenvolvimento da [home] e [cadastro_pet], modulação do Pet e montagem da apresentação utilizada no vídeo, apoio técnico a todas as integrantes com dificuldades e foi também uma das participantes da gravação.
 
 - Livia Matias da Silva: Responsável por desenvolver toda a app de [detalhes_pet], auxiliar na gravação e por prestar auxílio a qualquer integrante com dificuldades.
 
