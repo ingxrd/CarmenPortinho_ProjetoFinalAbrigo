@@ -37,18 +37,15 @@ Repassamos a cada encontro as regras do desafio, como o envio ser via pull reque
 
 Papéis e Responsabilidades:
 
-- Ana Caroline Freiria Pires: Responsável por liderar a squad, condução das reuniões, manutenção da pasta no Drive e Planilha de Organização de cada Desafio, recebimento de pull requests e acompanhamento do desempenho de cada integrante na entrega dos exercícios.
-- Responsável por desenvolver as models e as views da [gestao_adocao] e participar da gravação.
+- Ana Caroline Freiria Pires: Responsável por liderar a squad, condução das reuniões, manutenção da pasta no Drive e Planilha de Organização de cada Desafio, recebimento de pull requests e acompanhamento do desempenho de cada integrante na entrega dos exercícios. Responsável por desenvolver as models e as views da [gestao_adocao] e participar da gravação.
 
-- Andrezza Nogueira da Silva: Responsável por desenvolver [barra_pesquisa], parte do frontend, incrementações no [cadastro_pet], na parte de admin e views, finalizar o admin da [gestao_adocao], participar da gravação
-- e prestar auxílio a qualquer integrante com dificuldades.
+- Andrezza Nogueira da Silva: Responsável por desenvolver [barra_pesquisa], parte do frontend, incrementações no [cadastro_pet], na parte de admin e views, finalizar o admin da [gestao_adocao], participar da gravação e prestar auxílio a qualquer integrante com dificuldades.
 
 - Arielle Ribeiro de Oliveira Tavares: Responsável por desenvolver os arquivos de urls.py, forms.py, app.py e admin.py da [gestao_adocao] e por prestar auxílio a qualquer integrante com dificuldades.
 
 - Elizabete de Souza Fabri: Responsável por parte do frontend, através dos [templates] de cada app, e também por prestar auxílio a qualquer integrante com dificuldades e também foi também uma das participantes do vídeo.
 
-- Ingrid Stefhani Silva Munhoz: Tech Leader da squad, responsável por criar o repositório oficial para envio de cada commit e aprovações das pull requests. Construção das telas no Figma.
-- Responsável por desenvolver a [home] e [cadastro_pet], e por prestar auxílio a qualquer integrante com dificuldades e também foi também uma das participantes do vídeo.
+- Ingrid Stefhani Silva Munhoz: Tech Leader da squad, responsável por criar o repositório oficial para envio de cada commit e aprovações das pull requests. Modelagem das telas no Figma. Responsável por parte do frontend e desenvolvimento da [home] e [cadastro_pet], montagem da apresentação utilizada no vídeo, apoio técnico a todas as integrantes com dificuldades e foi também uma das participantes da gravação.
 
 - Livia Matias da Silva: Responsável por desenvolver toda a app de [detalhes_pet], auxiliar na gravação e por prestar auxílio a qualquer integrante com dificuldades.
 
