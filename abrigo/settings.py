@@ -99,10 +99,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 STATIC_URL = '/static/'  
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'home/static',  
-]
-
 # Configuração para arquivos de mídia (imagens, uploads)
 MEDIA_URL = '/fotos-pets/'  # URL base para acessar as imagens
 MEDIA_ROOT = BASE_DIR / 'fotos-pets'  # Diretório onde as imagens estão armazenadas
