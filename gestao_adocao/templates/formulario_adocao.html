@@ -8,7 +8,7 @@
         {% if success %}
         <p class="alert alert-success">Solicitação de adoção enviada com sucesso!</p>
         {% endif %}
-        
+
         <form method="post" enctype="multipart/form-data">
             <div class="form-group">
                 {% csrf_token %}
@@ -17,7 +17,7 @@
             
             <button type="submit" class="btn btn-pink text-white mb-4">Enviar Solicitação</button>
         </form>
-        <a href="{% url 'home' %}" class="text-decoration-none" style="color: #F07C93;">
+        <a href="{% url 'adote' %}" class="text-decoration-none" style="color: #F07C93;">
             &lt; Veja outros animais disponíveis
         </a>
         
