@@ -10,14 +10,17 @@ from .forms import AdotanteForm
 
 # Criar Adoção
 def criar_adocao(request):
+    success = False
     if request.method == 'POST':
         form = AdotanteForm(request.POST)
         if form.is_valid():
+            success = True
             form.save()
-            return redirect('/')  # Redireciona para a lista após salvar
+            form = AdotanteForm() #reseta o formulario
     else:
         form = AdotanteForm()
-    return render(request, 'formulario_adocao.html', {'form': form})
+
+    return render(request, 'formulario_adocao.html', {'form': form,'success':success}) # Redireciona para a lista após salvar
 
 # Edição da adoção
 def editar_adocao(request, id):

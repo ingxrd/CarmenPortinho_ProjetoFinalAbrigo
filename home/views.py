@@ -14,7 +14,7 @@ def adote_pet(request):
 
     if pesquisa_query:
         # Pesquisa por nome ou raça e animais não adotados
-        query_clean = Q(Q(nome_pet__icontains=pesquisa_query) | Q(raca_pet__icontains=pesquisa_query))
+        query_clean = Q(Q(nome_pet__icontains=pesquisa_query) | Q(raca_pet__icontains=pesquisa_query)) 
         animais = Pet.objects.filter(query_clean, adotado=False)
     else:
         # Se não houver pesquisa, exibe todos os animais não adotados
