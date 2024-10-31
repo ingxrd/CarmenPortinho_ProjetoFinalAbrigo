@@ -2,6 +2,10 @@
 ![Carmen Portinho](https://publica.ciar.ufg.br/ebooks/ebook-cientistas-brasileiras/imagens/cap02.png)
 *Créditos da imagem: [publica.ciar.ufg.br](https://publica.ciar.ufg.br/ebooks/ebook-cientistas-brasileiras/02.html)*
 
+## Video apresentação do projeto e link do site no pythonanywhere.com 💻 
+
+VIDEO: [Link video](https://www.capcut.com/s/CTr7pRMQPJyUkA0d/) <br>
+SITE: [Link site](lardepatinhas.pythonanywhere.com)
 
 
 ## Integrantes 👩💻  
