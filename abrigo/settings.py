@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-cc-(43cg^*^r$22jgp05@1h@l&2(rw_ew1qx3j^+*q*rtk2z!+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['andrezzanogueira.pythonanywhere.com'] #dominio que está hospedado
+# ALLOWED_HOSTS = ['andrezzanogueira.pythonanywhere.com'] #dominio que está hospedado
 
 # Application definition
 INSTALLED_APPS = [
@@ -100,7 +100,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 STATIC_URL = '/static/'
 
-STATIC_ROOT = "/home/andrezzanogueira/CarmenPortinho_ProjetoFinalAbrigo/home/static"
+# STATIC_ROOT = "/home/andrezzanogueira/CarmenPortinho_ProjetoFinalAbrigo/home/static"
 
 # Configuração para arquivos de mídia (imagens, uploads)
 MEDIA_URL = '/fotos-pets/'  # URL base para acessar as imagens
